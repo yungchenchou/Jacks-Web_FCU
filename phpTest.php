@@ -1,0 +1,9 @@
+<html>
+<title>php程式測試
+</title>
+<body>
+<?php
+	phpinfo();
+?>
+</body>
+</html>

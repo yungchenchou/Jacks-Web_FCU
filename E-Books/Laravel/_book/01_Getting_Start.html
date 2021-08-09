@@ -1,0 +1,355 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Getting Start · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02_Design_Home_Page.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="01_Getting_Start.html">
+            
+                <a href="01_Getting_Start.html">
+            
+                    
+                    Getting Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02_Design_Home_Page.html">
+            
+                <a href="02_Design_Home_Page.html">
+            
+                    
+                    Route in Laravel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="React_with_Laravel.html">
+            
+                <a href="React_with_Laravel.html">
+            
+                    
+                    React with Laravel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Laravel_Database.html">
+            
+                <a href="Laravel_Database.html">
+            
+                    
+                    Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="03_make_auth.md">
+            
+                <span>
+            
+                    
+                    Build Authentication Mechanism
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Getting Start</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="getting-start">Getting Start</h1>
+<h2 id="environment-setting">Environment setting</h2>
+<h3 id="composer">Composer</h3>
+<ul>
+<li>Step 1: Download Composer from <a href="https://getcomposer.org/download" target="_blank">HERE</a></li>
+</ul>
+<h2 id="initalize-a-new-project">Initalize a new project</h2>
+<h3 id="approach-1"><span style="background: rgb(192, 192, 192);">Approach 1:</span></h3>
+<p>The documentation can be found at <a href="https://laravel.com/docs/5.8" target="_blank">https://laravel.com/docs/5.8</a></p>
+<pre><code>composer create-project --prefer-dist laravel/laravel projectName
+</code></pre><p><img src="imgs/Fig001.png"></p>
+<h3 id="approach-2"><span style="background: rgb(192, 192, 192);">Approach 2:</span></h3>
+<p>You can use following instructions to create a Laravel project:</p>
+<pre><code>laravel new projectName
+</code></pre><p><img src="imgs/Fig004_create_project_use_laravel.png" alt="creat project use laver method"></p>
+<p></p><h4 style="background: rgb(255, 255, 0);" id="troubleshooting">Troubleshooting</h4>
+If you got the truble with the <code>laravel new projectName</code> instruction on Mac System, then you can apply following steps to solve the problem. <p></p>
+<ul>
+<li>Step 1: edit &apos;~/.bash_profile&apos;
+<code>vim ~/.bash_profile</code></li>
+<li>Step 2: add <code>export PATH=~/.composer/vendor/bin:$PATH</code> to .bash_profile file</li>
+<li>Step 3: Reopen the Terminal and excute <code>laravel new projectName</code> instruction again to create the new project.</li>
+</ul>
+<h3 id="preview-the-result-of-laravel-project"><span style="background: rgb(255, 255, 0);">Preview the result of laravel project</span></h3>
+<p>run the following instructions in Termial, then the tool will show the link address.</p>
+<pre><code>php artisan serve
+</code></pre><p><img src="imgs/Fig002_php_artisan_serve.png">
+<img src="imgs/Fig003_preview_laravel_project.png" style="border: solid 1px rgb(0, 0, 0);"></p>
+<h2 id="using-xampp-to-preview-laravel-project">Using xampp to preview Laravel project</h2>
+<h3 id="mac-os">Mac OS</h3>
+<ul>
+<li>Step 1: install apache on Mac</li>
+<li>Step 2: download MySQL server dmg file from [<a href="https://dev.mysql.com/downloads/mysql/" target="_blank">HERE </a>]   </li>
+<li>Step 3: edit .bash_profile file in user&apos;s home folder <code>vim ~/.bash_profile</code> then add <code>export PATH=&quot;/usr/local/mysql/bin:$PATH&quot;</code> setting into the file. 
+<img src="imgs/Fig012_edit_bash_profile.png"></li>
+<li>Step 4: use <code>source ~/.bash_profile</code> to apply the settings.
+<img src="imgs/Fig013_source_bash_profile.png"></li>
+<li>Step 5: Set root&apos;s password of MySQL <ul>
+<li>Step 5.1: run <code>sudo mysql start</code> to start mysql server</li>
+<li>Step 5.2: login to mysql server with <code>mysql -u root</code> instruction in terminal. <span style="background: red;">Note: the default password of root is blank (i.e. no password)</span></li>
+<li>Step 5.3: exit mysql after stting root password</li>
+</ul>
+</li>
+<li>Step 6: create a database for your Laravel project<ul>
+<li>Step 6.1: login mysql server using root with instruction <code>mysql -u root -p</code>
+<img src="imgs/Fig013-1.png"></li>
+</ul>
+</li>
+<li>Step 7: Download <a href="https://dev.mysql.com/downloads/file/?id=488575" target="_blank">MySQL workbench</a> and install it on Mac </li>
+<li>Step 8: manage database by using MySQL workbench
+<img src="imgs/Fig014.png">
+<img src="imgs/Fig015.png">
+<img src="imgs/Fig016.png">
+<img src="imgs/Fig017.png">
+<img src="imgs/Fig018.png">
+<img src="imgs/Fig019.png">
+<img src="imgs/Fig020.png">
+<img src="imgs/Fig021.png">
+<img src="imgs/Fig022.png">
+<img src="imgs/Fig023.png"></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02_Design_Home_Page.html" class="navigation navigation-next " aria-label="Next page: Route in Laravel">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Getting Start","level":"1.2","depth":1,"next":{"title":"Route in Laravel","level":"1.3","depth":1,"path":"02_Design_Home_Page.md","ref":"02_Design_Home_Page.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"01_Getting_Start.md","mtime":"2019-08-12T16:48:52.441Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-12T16:48:57.507Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+
+table.course {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(rgb(170, 170, 170), rgb(170, 170, 170));
+    font-family: "cwtexfangsong", serif;
+}
+table.course thead{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(rgb(150, 150, 255), rgb(90, 90, 128));
+}
+table.course th, td{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+table.course tr.even {
+    background: rgb(190, 190, 190);
+}
+table.course a:link, 
+table.course a:visited {
+    color: rgb(255, 168, 104);
+    text-decoration: none;
+}
+
+/* ------------------------------------ */
+/*         sub navigation      */
+/* ------------------------------------ */
+.sub-nav {
+    max-width: 1100px;
+    height: 40px;
+/*    background-image: linear-gradient(rgb(180,180,180), rgb(40, 40, 40));*/
+    margin: 15px auto;
+    border-radius: 8px;
+}
+.sub-nav ul {
+    list-style: none;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+.sub-nav ul li{
+    font-size: 1.2em;
+    display: inline-block;
+    margin-left: 5px;
+    background-color: rgb(131, 242, 131);
+    padding: 5px 15px;
+    border-radius: 120px;
+}
+.sub-nav li.active {
+    background-color: rgb(255, 0, 0);
+}
+.sub-nav ul li a:link,
+.sub-nav ul li a:visited {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    transition: background-color 0.8s, border 0.3s, color 0.3s;
+}
+.sub-nav ul li a:hover,
+.sub-nav ul li a:active {
+    color: rgb(250, 250, 20);
+}
+.sub-nav ul li:hover, 
+.sub-nav ul li a:active {
+    color: rgb(250, 250, 20);
+    background-color: rgb(44, 109, 44);
+}

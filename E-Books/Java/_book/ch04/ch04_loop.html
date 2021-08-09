@@ -1,0 +1,624 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Section 4.2 for-loop · Java Tutorial</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Yung-Chen Chou">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sunlight-highlighter/sunlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ch05/ch05_Introduction.md" />
+    
+    
+    <link rel="prev" href="ch04_if_else.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    第零章 Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../ch01/01_Env_Editors.html">
+            
+                <a href="../ch01/01_Env_Editors.html">
+            
+                    
+                    Chapter 1 環境與程式編輯器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../ch01/01_01_JDK.html">
+            
+                <a href="../ch01/01_01_JDK.html">
+            
+                    
+                    Section 1.1 JDK 安裝與環境變數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../ch01/01_Editors.html">
+            
+                <a href="../ch01/01_Editors.html">
+            
+                    
+                    Section 1.2 程式編輯器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../ch01/01_Github.md">
+            
+                <span>
+            
+                    
+                    Section 1.3 Github 版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ch02/ch02_Introduction.html">
+            
+                <a href="../ch02/ch02_Introduction.html">
+            
+                    
+                    Chapter 2 基本輸出入
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../ch02/ch02_javaProgramStructure.html">
+            
+                <a href="../ch02/ch02_javaProgramStructure.html">
+            
+                    
+                    Section 2.1 Java 程式架構
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../ch02/ch02_basicIO.html">
+            
+                <a href="../ch02/ch02_basicIO.html">
+            
+                    
+                    Section 2.2 基本輸出入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../ch02/ch02_debuging.html">
+            
+                <a href="../ch02/ch02_debuging.html">
+            
+                    
+                    Section 2.3 程式錯誤偵測與處理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../ch03/ch03_Introduction.html">
+            
+                <a href="../ch03/ch03_Introduction.html">
+            
+                    
+                    Chapter 3 基本資料型態
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../ch03/ch03_Variable.md">
+            
+                <span>
+            
+                    
+                    Section 3.1 變數與常數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../ch03/ch03_BasicDataType.md">
+            
+                <span>
+            
+                    
+                    Section 3.2 基本資料型態
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch04_Introduction.md">
+            
+                <span>
+            
+                    
+                    Chapter 4 流程控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="ch04_if_else.html">
+            
+                <a href="ch04_if_else.html">
+            
+                    
+                    Section 4.1 if-else
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="ch04_loop.html">
+            
+                <a href="ch04_loop.html">
+            
+                    
+                    Section 4.2 for-loop
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../ch05/ch05_Introduction.md">
+            
+                <span>
+            
+                    
+                    Chapter 5 陣列 (Array)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../ch05/ch05_1D_Array.md">
+            
+                <span>
+            
+                    
+                    Section 5.1 一維陣列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../ch05/ch05_MultiDim_Array.md">
+            
+                <span>
+            
+                    
+                    Section 5.2 多維陣列
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../ch06/ch06_Introduction.md">
+            
+                <span>
+            
+                    
+                    Chapter 6 函式呼叫與遞迴 (Function and recursive)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../ch06/ch06_function.md">
+            
+                <span>
+            
+                    
+                    Section 6.1 函式呼叫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../ch06/ch06_recursive.md">
+            
+                <span>
+            
+                    
+                    Section 6.2 函式呼叫
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../reference.html">
+            
+                <a href="../reference.html">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Section 4.2 for-loop</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="loop-&#x8FF4;&#x5708;">Loop &#x8FF4;&#x5708;</h1>
+<h2 id="for-loop">for loop</h2>
+<pre><code class="lang-java"><div class="sunlight-container sunlight-theme-gitbook"><div class="sunlight-code-container"><pre class="sunlight-highlight-java sunlight-highlighted"><span class="sunlight-java"><span class="sunlight-keyword">for</span>&#xA0;<span class="sunlight-punctuation">(</span><span class="sunlight-ident">statement</span>&#xA0;<span class="sunlight-number">1</span><span class="sunlight-punctuation">;</span>&#xA0;<span class="sunlight-ident">statement</span>&#xA0;<span class="sunlight-number">2</span><span class="sunlight-punctuation">;</span>&#xA0;<span class="sunlight-ident">statement</span>&#xA0;<span class="sunlight-number">3</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;<span class="sunlight-comment">//&#xA0;code&#xA0;block&#xA0;to&#xA0;be&#xA0;executed</span>
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<h3 id="&#x7BC4;&#x4F8B;-1">&#x7BC4;&#x4F8B; 1:</h3>
+<p>&#x8ACB;&#x5BEB;&#x4E00;&#x500B;&#x7A0B;&#x5F0F;&#x5F9E; 1 &#x7D2F;&#x52A0;&#x81F3; 100</p>
+<pre><code class="lang-java"><div class="sunlight-container sunlight-theme-gitbook"><div class="sunlight-code-container"><pre class="sunlight-highlight-java sunlight-highlighted"><span class="sunlight-java"><span class="sunlight-keyword">import</span>&#xA0;<span class="sunlight-ident">java</span><span class="sunlight-operator">.</span><span class="sunlight-ident">util</span><span class="sunlight-operator">.</span><span class="sunlight-named-ident">Scanner</span><span class="sunlight-punctuation">;</span>
+<span class="sunlight-keyword">public</span>&#xA0;<span class="sunlight-keyword">class</span>&#xA0;<span class="sunlight-named-ident">Main</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">public</span>&#xA0;<span class="sunlight-keyword">static</span>&#xA0;<span class="sunlight-keyword">void</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-named-ident">String</span><span class="sunlight-punctuation">[</span><span class="sunlight-punctuation">]</span>&#xA0;<span class="sunlight-ident">args</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-named-ident">Scanner</span>&#xA0;<span class="sunlight-ident">scn</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-keyword">new</span>&#xA0;<span class="sunlight-named-ident">Scanner</span><span class="sunlight-punctuation">(</span><span class="sunlight-ident">System</span><span class="sunlight-operator">.</span><span class="sunlight-ident">in</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">sum</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">for</span><span class="sunlight-punctuation">(</span><span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">i</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-number">1</span><span class="sunlight-punctuation">;</span>&#xA0;<span class="sunlight-ident">i</span>&#xA0;<span class="sunlight-operator">&lt;=</span>&#xA0;<span class="sunlight-number">100</span><span class="sunlight-punctuation">;</span>&#xA0;<span class="sunlight-ident">i</span><span class="sunlight-operator">++</span>&#xA0;<span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">sum</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-ident">sum</span>&#xA0;<span class="sunlight-operator">+</span>&#xA0;<span class="sunlight-ident">i</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">}</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">System</span><span class="sunlight-operator">.</span><span class="sunlight-ident">out</span><span class="sunlight-operator">.</span><span class="sunlight-ident">println</span><span class="sunlight-punctuation">(</span><span class="sunlight-ident">sum</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">}</span>
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<h2 id="nest-for-loop">nest for loop</h2>
+<p><img src="fig4-3.png"></p>
+<h3 id="&#x7BC4;&#x4F8B;">&#x7BC4;&#x4F8B;:</h3>
+<p>&#x8A2D;&#x8A08;&#x4E00;&#x500B;&#x7A0B;&#x5F0F;&#x5217;&#x51FA;&#x4E5D;&#x4E5D;&#x4E58;&#x6CD5;&#x8868;</p>
+<pre><code class="lang-java"><div class="sunlight-container sunlight-theme-gitbook"><div class="sunlight-code-container"><pre class="sunlight-highlight-java sunlight-highlighted"><span class="sunlight-java"><span class="sunlight-keyword">import</span>&#xA0;<span class="sunlight-ident">java</span><span class="sunlight-operator">.</span><span class="sunlight-ident">util</span><span class="sunlight-operator">.</span><span class="sunlight-named-ident">Scanner</span><span class="sunlight-punctuation">;</span>
+<span class="sunlight-keyword">public</span>&#xA0;<span class="sunlight-keyword">class</span>&#xA0;<span class="sunlight-named-ident">Main</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">public</span>&#xA0;<span class="sunlight-keyword">static</span>&#xA0;<span class="sunlight-keyword">void</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-named-ident">String</span><span class="sunlight-punctuation">[</span><span class="sunlight-punctuation">]</span>&#xA0;<span class="sunlight-ident">args</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-named-ident">Scanner</span>&#xA0;<span class="sunlight-ident">scn</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-keyword">new</span>&#xA0;<span class="sunlight-named-ident">Scanner</span><span class="sunlight-punctuation">(</span><span class="sunlight-ident">System</span><span class="sunlight-operator">.</span><span class="sunlight-ident">in</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">for</span><span class="sunlight-punctuation">(</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">i</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-number">1</span><span class="sunlight-punctuation">;</span>&#xA0;<span class="sunlight-ident">i</span>&#xA0;<span class="sunlight-operator">&lt;=</span>&#xA0;<span class="sunlight-number">9</span><span class="sunlight-punctuation">;</span>&#xA0;<span class="sunlight-ident">i</span><span class="sunlight-operator">++</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">for</span><span class="sunlight-punctuation">(</span><span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">j</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-number">1</span><span class="sunlight-punctuation">;</span>&#xA0;<span class="sunlight-ident">j</span>&#xA0;<span class="sunlight-operator">&lt;=</span><span class="sunlight-number">9</span><span class="sunlight-punctuation">;</span>&#xA0;<span class="sunlight-ident">j</span><span class="sunlight-operator">++</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">System</span><span class="sunlight-operator">.</span><span class="sunlight-ident">out</span><span class="sunlight-operator">.</span><span class="sunlight-ident">print</span><span class="sunlight-punctuation">(</span>&#xA0;<span class="sunlight-ident">i</span><span class="sunlight-operator">*</span><span class="sunlight-ident">j</span>&#xA0;<span class="sunlight-operator">+</span>&#xA0;<span class="sunlight-string">&quot;\t&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">}</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">System</span><span class="sunlight-operator">.</span><span class="sunlight-ident">out</span><span class="sunlight-operator">.</span><span class="sunlight-ident">println</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">}</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">}</span>
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<h4 id="output"><b>Output:</b></h4>
+
+<p><img src="99table.png"></p>
+<h3 id="&#x7BC4;&#x4F8B;">&#x7BC4;&#x4F8B;:</h3>
+<p>&#x4F7F;&#x7528;&#x8005;&#x8F38;&#x5165;&#x6574;&#x6578; n &#xFF0C;&#x5370;&#x51FA;&#x9AD8;&#x5EA6;&#x70BA; n &#x7531; * &#x7B26;&#x865F;&#x6240;&#x7D44;&#x7684;&#x4E09;&#x89D2;&#x5F62;&#xFF0C;&#x4F8B;: n = 4</p>
+<pre>
+*
+**
+***
+****
+</pre>
+
+<pre><code class="lang-java"><div class="sunlight-container sunlight-theme-gitbook"><div class="sunlight-code-container"><pre class="sunlight-highlight-java sunlight-highlighted"><span class="sunlight-java"><span class="sunlight-keyword">import</span>&#xA0;<span class="sunlight-ident">java</span><span class="sunlight-operator">.</span><span class="sunlight-ident">util</span><span class="sunlight-operator">.</span><span class="sunlight-named-ident">Scanner</span><span class="sunlight-punctuation">;</span>
+<span class="sunlight-keyword">public</span>&#xA0;<span class="sunlight-keyword">class</span>&#xA0;<span class="sunlight-named-ident">Main</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">public</span>&#xA0;<span class="sunlight-keyword">static</span>&#xA0;<span class="sunlight-keyword">void</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-named-ident">String</span><span class="sunlight-punctuation">[</span><span class="sunlight-punctuation">]</span>&#xA0;<span class="sunlight-ident">args</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-named-ident">Scanner</span>&#xA0;<span class="sunlight-ident">scn</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-keyword">new</span>&#xA0;<span class="sunlight-named-ident">Scanner</span><span class="sunlight-punctuation">(</span><span class="sunlight-ident">System</span><span class="sunlight-operator">.</span><span class="sunlight-ident">in</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">n</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-ident">scn</span><span class="sunlight-operator">.</span><span class="sunlight-ident">nextInt</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">for</span><span class="sunlight-punctuation">(</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">i</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span>&#xA0;<span class="sunlight-ident">i</span>&#xA0;<span class="sunlight-operator">&lt;</span>&#xA0;<span class="sunlight-ident">n</span><span class="sunlight-punctuation">;</span>&#xA0;<span class="sunlight-ident">i</span><span class="sunlight-operator">++</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">for</span><span class="sunlight-punctuation">(</span><span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">j</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-number">0</span><span class="sunlight-punctuation">;</span><span class="sunlight-ident">j</span>&#xA0;<span class="sunlight-operator">&lt;=</span>&#xA0;<span class="sunlight-ident">i</span><span class="sunlight-punctuation">;</span>&#xA0;<span class="sunlight-ident">j</span><span class="sunlight-operator">++</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">System</span><span class="sunlight-operator">.</span><span class="sunlight-ident">out</span><span class="sunlight-operator">.</span><span class="sunlight-ident">print</span><span class="sunlight-punctuation">(</span><span class="sunlight-string">&quot;*&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">}</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">System</span><span class="sunlight-operator">.</span><span class="sunlight-ident">out</span><span class="sunlight-operator">.</span><span class="sunlight-ident">println</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">}</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">}</span>
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<h4 id="output"><b>Output</b></h4>
+
+<p><img src="fig4-2.png"></p>
+<h2 id="foreach-loop">foreach loop</h2>
+<h3 id="&#x7BC4;&#x4F8B;">&#x7BC4;&#x4F8B;:</h3>
+<p>&#x5047;&#x8A2D;&#x4E00;&#x500B;&#x9663;&#x5217; data = {1, 9, 3, 5, 8, 2, 6}&#xFF0C;&#x8ACB;&#x4EE5; foreach &#x7684;&#x8A9E;&#x6CD5;&#x5C07; data &#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E00;&#x4E00;&#x5217;&#x51FA;&#xFF0C;&#x4E26;&#x4F7F;&#x7528; tab &#x5C07;&#x5143;&#x7D20;&#x9593;&#x9694;&#x958B;&#x3002;</p>
+<pre><code class="lang-java"><div class="sunlight-container sunlight-theme-gitbook"><div class="sunlight-code-container"><pre class="sunlight-highlight-java sunlight-highlighted"><span class="sunlight-java"><span class="sunlight-keyword">import</span>&#xA0;<span class="sunlight-ident">java</span><span class="sunlight-operator">.</span><span class="sunlight-ident">util</span><span class="sunlight-operator">.</span><span class="sunlight-named-ident">Scanner</span><span class="sunlight-punctuation">;</span>
+<span class="sunlight-keyword">public</span>&#xA0;<span class="sunlight-keyword">class</span>&#xA0;<span class="sunlight-named-ident">Main</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">public</span>&#xA0;<span class="sunlight-keyword">static</span>&#xA0;<span class="sunlight-keyword">void</span>&#xA0;<span class="sunlight-ident">main</span><span class="sunlight-punctuation">(</span><span class="sunlight-named-ident">String</span><span class="sunlight-punctuation">[</span><span class="sunlight-punctuation">]</span>&#xA0;<span class="sunlight-ident">args</span><span class="sunlight-punctuation">)</span>&#xA0;<span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-named-ident">Scanner</span>&#xA0;<span class="sunlight-ident">scn</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-keyword">new</span>&#xA0;<span class="sunlight-named-ident">Scanner</span><span class="sunlight-punctuation">(</span><span class="sunlight-ident">System</span><span class="sunlight-operator">.</span><span class="sunlight-ident">in</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-named-ident">data</span><span class="sunlight-punctuation">[</span><span class="sunlight-punctuation">]</span>&#xA0;<span class="sunlight-operator">=</span>&#xA0;<span class="sunlight-punctuation">{</span><span class="sunlight-number">1</span><span class="sunlight-punctuation">,</span>&#xA0;<span class="sunlight-number">9</span><span class="sunlight-punctuation">,</span>&#xA0;<span class="sunlight-number">3</span><span class="sunlight-punctuation">,</span>&#xA0;<span class="sunlight-number">5</span><span class="sunlight-punctuation">,</span>&#xA0;<span class="sunlight-number">8</span><span class="sunlight-punctuation">,</span>&#xA0;<span class="sunlight-number">2</span><span class="sunlight-punctuation">,</span>&#xA0;<span class="sunlight-number">6</span><span class="sunlight-punctuation">}</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-keyword">for</span><span class="sunlight-punctuation">(</span>&#xA0;<span class="sunlight-keyword">int</span>&#xA0;<span class="sunlight-ident">value</span>&#xA0;<span class="sunlight-operator">:</span>&#xA0;<span class="sunlight-ident">data</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">{</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">System</span><span class="sunlight-operator">.</span><span class="sunlight-ident">out</span><span class="sunlight-operator">.</span><span class="sunlight-ident">print</span><span class="sunlight-punctuation">(</span><span class="sunlight-ident">value</span>&#xA0;<span class="sunlight-operator">+</span>&#xA0;<span class="sunlight-string">&quot;\t&quot;</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">}</span>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-ident">System</span><span class="sunlight-operator">.</span><span class="sunlight-ident">out</span><span class="sunlight-operator">.</span><span class="sunlight-ident">println</span><span class="sunlight-punctuation">(</span><span class="sunlight-punctuation">)</span><span class="sunlight-punctuation">;</span>
+&#xA0;&#xA0;&#xA0;&#xA0;<span class="sunlight-punctuation">}</span>
+<span class="sunlight-punctuation">}</span>
+</span></pre></div></div></code></pre>
+<h4 id="output"><b>Output</b></h4>
+
+<p><img src="fig4-4.png"></p>
+<h2 id="while-loop">while loop</h2>
+<h2 id="do-while-loop">do-while loop</h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch04_if_else.html" class="navigation navigation-prev " aria-label="Previous page: Section 4.1 if-else">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ch05/ch05_Introduction.md" class="navigation navigation-next " aria-label="Next page: Chapter 5 陣列 (Array)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Section 4.2 for-loop","level":"1.5.2","depth":2,"next":{"title":"Chapter 5 陣列 (Array)","level":"1.6","depth":1,"path":"ch05/ch05_Introduction.md","ref":"ch05/ch05_Introduction.md","articles":[{"title":"Section 5.1 一維陣列","level":"1.6.1","depth":2,"path":"ch05/ch05_1D_Array.md","ref":"ch05/ch05_1D_Array.md","articles":[]},{"title":"Section 5.2 多維陣列","level":"1.6.2","depth":2,"path":"ch05/ch05_MultiDim_Array.md","ref":"ch05/ch05_MultiDim_Array.md","articles":[]}]},"previous":{"title":"Section 4.1 if-else","level":"1.5.1","depth":2,"path":"ch04/ch04_if_else.md","ref":"ch04/ch04_if_else.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","sunlight-highlighter","include-codeblock"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sunlight-highlighter":{"lineNumbers":false,"theme":"gitbook"},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Yung-Chen Chou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java Tutorial","gitbook":"*"},"file":{"path":"ch04/ch04_loop.md","mtime":"2019-09-29T14:04:00.527Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-29T14:04:24.345Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,218 @@
+/* 
+    Document   : Jack_PHP
+    Created on : 2010/5/30, 下午 09:52:16
+    Author     : jackjow
+    Description:
+    Purpose of the stylesheet follows.
+*/
+root { 
+    display: block;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #fff;
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;;
+}
+
+img { 
+    border: none;
+}
+a {
+    color: #57626a;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color : #000;
+}
+
+#wrap {
+    margin: 0 auto;
+    width: 800px;
+    text-align: left;
+}
+
+#header {
+    padding: 10px 0 20px 0;
+}
+#header h1 {
+    font-size: 26px;
+    font-weight: 100;
+    letter-spacing: 0px;
+    padding: 12px 0 5px 10px;
+}
+#header h1 a {
+    color: #57626a;
+    text-decoration: none;
+}
+#header h1 a:hover {
+    color: #57626a;
+    text-decoration: none;
+}
+#header h2 {
+    color: #ccc;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 0 0 0 11px;
+    letter-spacing: -1px;
+    line-height: 12px;
+}
+
+#menu {
+    height: 40px;
+    line-height: 40px;
+    background: #57626a url(images/menu.jpg) no-repeat;
+    /* text-transform: uppercase;*/
+}
+
+#menu ul {
+    padding-left: 10px;
+    list-style-type: none;
+}
+#menu ul li {
+    display: block;
+    float: left;
+}
+#menu ul li a {
+    color: #eee;
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+#menu ul li a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+#content {
+    padding: 10px 20px;
+}
+
+.right {
+    width: 568px;
+    float: right;
+    text-align: justify;
+}
+.right h1 {
+    color: #554499;
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    font-weight: 800;
+    padding : 10px 0 15px 0;
+}
+.right ul {
+    padding-left: 10px;
+    list-style-type: none;
+}
+.right ul li {
+    height: 30px;
+    font-size: 16px;
+}
+.right h2 {
+    color: #FF48AA;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    font-weight: 100;
+    padding : 10px 0 15px 0;
+}
+.right table{
+    font-size: 16px;
+    line-height: 25px;
+    font-family: 新細明體, Verdana, "Times New Roman";
+}
+.right a{
+    color: blue;
+}
+.right a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.left {
+    width: 150px;
+    float: left;
+    padding: 10px;
+    border-right: 1px solid #bbb;
+    font-size: 12px;
+}
+.left ul {
+    list-style-type: square;
+    padding: 5px 10px 10px 20px;
+    color: #57626a;
+}
+.left h2 {
+    height: 30px;
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+    font-weight: 600;
+}
+.left a { 
+    text-decoration: none
+}
+.courseTableL1{
+    font-size: 16px;
+    line-height: 25px;
+    position: relative;
+    left: 6px;
+    /*visibility: hidden;*/
+}
+
+.courseTableL2{
+    font-size: 16px;
+    line-height: 25px;
+    position: relative;
+    left: 18px;
+    display: none;
+}
+
+#footer {
+    background: #eee;
+    border-top: 3px solid #57626a;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 11px;
+    padding: 10px;
+}
+table {
+  border: 0;
+  font-family: arial;
+  font-size:12px;
+}
+p {
+    font-size: 14px;
+}
+.style1 {
+    color: #36a;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    word-spacing:5px;
+}
+.pubStyle1 {
+    line-height: 150%;
+    font-family: "Times New Roman";
+    font-size: 16px;
+}
+.pubTitleStyle1 {
+    line-height: 150%;
+    font-family: Ariel;
+    color: #C43;
+    font-size: 24px;
+}
+.contentStyle1{
+    line-height: 150%;
+    font-size: 16px;
+}
